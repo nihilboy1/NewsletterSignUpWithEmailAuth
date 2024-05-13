@@ -2,8 +2,11 @@
 
 Esta é uma aplicação simples desenvolvida para capturar emails de usuários interessados em receber newsletters. A aplicação possui versões para dispositivos móveis e desktop, proporcionando uma experiência consistente em diferentes plataformas.
 
-## Teste o App
+## Acesse o App
 www.link.com.br
+
+<img src="https://i.imgur.com/MSI4FSu.png" />
+
 
 
 ## Funcionalidades Principais
