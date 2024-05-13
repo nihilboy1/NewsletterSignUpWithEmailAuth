@@ -3,11 +3,11 @@
 Esta é uma aplicação simples desenvolvida para capturar emails de usuários interessados em receber newsletters. A aplicação possui versões para dispositivos móveis e desktop, proporcionando uma experiência consistente em diferentes plataformas.
 
 ## Acesse o App
-www.link.com.br
 
-<img src="https://i.imgur.com/MSI4FSu.png" />
+https://newslettersignupwithemailauth.netlify.app/
 
-
+<hr/>
+<img src="https://i.imgur.com/MSI4FSu.png" style="width:100%" />
 
 ## Funcionalidades Principais
 
@@ -26,9 +26,11 @@ www.link.com.br
 - **TypeScript:** Superset do JavaScript que adiciona tipagem estática à linguagem.
 - **Axios:** Cliente HTTP baseado em Promise para fazer requisições HTTP no navegador e no Node.js.
 - **Vite:** Construtor de projetos react com recarga rápida para aplicativos web modernos.
-  
+
 ## Estrutura do Projeto
+
 ### Frontend
+
 - **public:** Arquivos estáticos como HTML, imagens, etc.
 - **src:** Contém os arquivos de código-fonte da aplicação.
 - **src/components:** Componentes React menores e reutilizáveis.
@@ -38,6 +40,7 @@ www.link.com.br
 - **src/routes:** Lógica de roteamento de páginas
 
 ### Backend
+
 - **.env:** Guarda informações sensíveis, como email e senha do Gmail
 - **src:** Contém os arquivos de código-fonte do backend.
 
