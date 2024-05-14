@@ -28,6 +28,7 @@ export default function Subscribe() {
       setEmailError(true);
       return;
     }
+    setEmailError(false);
 
     try {
       setEmailIsBeingSent(true);
@@ -90,14 +91,14 @@ export default function Subscribe() {
               : "Email Adress"}
           </p>
           {emailError && (
-            <p className="font-roboto text-xs font-bold  text-red-400 opacity-90">
-              Valid email required
+            <p className="font-roboto text-xs font-bold  text-red-400 ">
+              Valid Email Required
             </p>
           )}
         </div>
         <input
           className={`border rounded-lg p-4 w-full pl-5 md:py-2 ${
-            emailError && "border-red-400"
+            emailError && "border-red-400 bg-red-100 text-red-400"
           } `}
           type={waitingForCode ? "text" : "email"}
           value={waitingForCode ? code : email}
