@@ -96,7 +96,9 @@ export default function Subscribe() {
           )}
         </div>
         <input
-          className="border rounded-lg p-4 w-full pl-5 md:py-2"
+          className={`border rounded-lg p-4 w-full pl-5 md:py-2 ${
+            emailError && "border-red-400"
+          } `}
           type={waitingForCode ? "text" : "email"}
           value={waitingForCode ? code : email}
           onChange={(e) => {
