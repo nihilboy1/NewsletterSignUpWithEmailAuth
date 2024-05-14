@@ -31,14 +31,14 @@ export default function Subscribe() {
 
     try {
       setEmailIsBeingSent(true);
-      const baseRandomCode = Math.floor(
+      const mathRandomCode = Math.floor(
         100000 + Math.random() * 900000
       ).toString();
-      setRandomAuthCode(baseRandomCode);
+      setRandomAuthCode(mathRandomCode);
 
       const res = await api.post("/send", {
         email,
-        randomAuthCode: baseRandomCode,
+        randomAuthCode: mathRandomCode,
       });
       if (res.status === 200) {
         setWaitingForCode(true);
