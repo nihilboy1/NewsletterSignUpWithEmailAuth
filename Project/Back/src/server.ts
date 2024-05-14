@@ -10,11 +10,13 @@ app.use(bodyParser.json());
 app.use(
   cors({
     origin: "https://newslettersignupwithemailauth.netlify.app",
-    methods: ["POST"],
+    methods: ["GET", "POST"], // Métodos permitidos
+    allowedHeaders: ["Content-Type", "Authorization"], // Cabeçalhos permitidos
   })
 );
 
 app.post("/send", async (req: Request, res: Response) => {
+  console.log("Email send request");
   const createUserSchema = z.object({
     randomAuthCode: z.string(),
     email: z.string().email(),
